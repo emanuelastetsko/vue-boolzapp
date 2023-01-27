@@ -54,90 +54,14 @@
 
                         <div class="chat-list">
 
-                            <div class="chat-preview active">
-                                <img src="img/avatar_1.jpg" alt="Foto profilo">
+                            <div class="chat-preview" v-for="(contact, index) in contacts">
+                                <img :src="'img/avatar' + contact.avatar + '.jpg'" alt="Foto profilo">
                                 <div class="text">
-                                    <p>Michele</p>
-                                    <span>Ultimo messaggio inviato</span>
+                                    <p>{{contact.name}}</p>
+                                    <span></span>
                                 </div>
                                 <div class="time">
-                                    <span>12:00</span>
-                                </div>
-                            </div>
-
-                            <div class="chat-preview">
-                                <img src="img/avatar_2.jpg" alt="Foto profilo">
-                                <div class="text">
-                                    <p>Fabio</p>
-                                    <span>Ultimo messaggio inviato</span>
-                                </div>
-                                <div class="time">
-                                    <span>12:00</span>
-                                </div>
-                            </div>
-
-                            <div class="chat-preview">
-                                <img src="img/avatar_3.jpg" alt="Foto profilo">
-                                <div class="text">
-                                    <p>Samuele</p>
-                                    <span>Ultimo messaggio inviato</span>
-                                </div>
-                                <div class="time">
-                                    <span>12:00</span>
-                                </div>
-                            </div>
-
-                            <div class="chat-preview ">
-                                <img src="img/avatar_4.jpg" alt="Foto profilo">
-                                <div class="text">
-                                    <p>Alessandro B.</p>
-                                    <span>Ultimo messaggio inviato</span>
-                                </div>
-                                <div class="time">
-                                    <span>12:00</span>
-                                </div>
-                            </div>
-
-                            <div class="chat-preview">
-                                <img src="img/avatar_5.jpg" alt="Foto profilo">
-                                <div class="text">
-                                    <p>Alessandro L.</p>
-                                    <span>Ultimo messaggio inviato</span>
-                                </div>
-                                <div class="time">
-                                    <span>12:00</span>
-                                </div>
-                            </div>
-
-                            <div class="chat-preview">
-                                <img src="img/avatar_6.jpg" alt="Foto profilo">
-                                <div class="text">
-                                    <p>Claudia</p>
-                                    <span>Ultimo messaggio inviato</span>
-                                </div>
-                                <div class="time">
-                                    <span>12:00</span>
-                                </div>
-                            </div>
-
-                            <div class="chat-preview">
-                                <img src="img/avatar_7.jpg" alt="Foto profilo">
-                                <div class="text">
-                                    <p>Federico</p>
-                                    <span>Ultimo messaggio inviato</span>
-                                </div>
-                                <div class="time">
-                                    <span>12:00</span>
-                                </div>
-                            </div>
-                            <div class="chat-preview">
-                                <img src="img/avatar_8.jpg" alt="Foto profilo">
-                                <div class="text">
-                                    <p>Davide</p>
-                                    <span>Ultimo messaggio inviato</span>
-                                </div>
-                                <div class="time">
-                                    <span>12:00</span>
+                                    <span></span>
                                 </div>
                             </div>
 
