@@ -4,3 +4,76 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* MAIN */
+main{
+    width: 100%;
+    height: 100vh;
+    background: rgb(213,219,216);
+    background: linear-gradient(0deg, rgba(213,219,216,1) 80%, rgba(0,150,136,1) 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    height: 90%;
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-container{
+    width: 40%;
+    height: 100%;
+    background-color: coral;
+}
+
+.left-container .user-name{
+    width: 100%;
+    height: 10%;
+    background-color: lightcoral;
+}
+
+.left-container .alert{
+    width: 100%;
+    height: 12%;
+    background-color: lightpink;
+}
+
+.left-container .search-box{
+    width: 100%;
+    height: 8%;
+    background-color: lightcyan;
+}
+
+.left-container .chat-preview{
+    width: 100%;
+    height: 70%;
+    background-color: lightsalmon;
+}
+
+.right-container{
+    width: 60%;
+    height: 100%;
+    background-color: deeppink;
+}
+
+.right-container .user-info{
+    width: 100%;
+    height: 10%;
+    background-color: indianred;
+}
+
+.right-container .chat{
+    width: 100%;
+    height: 80%;
+    background-color: thistle;
+}
+
+.right-container .input{
+    width: 100%;
+    height: 10%;
+    background-color: lightskyblue;
+}
