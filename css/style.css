@@ -24,35 +24,80 @@ main{
     flex-wrap: wrap;
 }
 
+/* LEFT CONTAINER */
+
 .left-container{
     width: 40%;
     height: 100%;
     background-color: coral;
 }
 
-.left-container .user-name{
+.left-container .user-info{
     width: 100%;
     height: 10%;
-    background-color: lightcoral;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-container .user-info .user-profile{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.left-container .user-info .user-profile img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.left-container .user-info .actions{
+    color: #b1b1b1;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left-container .user-info .actions i{
+    padding: 0 5px;
+    font-size: 1.3em;
 }
 
 .left-container .alert{
     width: 100%;
     height: 12%;
-    background-color: lightpink;
+    background-color: #8edafc;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.left-container .alert i{
+    font-size: 1.3em;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    color: #8edafc;
+    margin-right: 10px;
 }
 
 .left-container .search-box{
     width: 100%;
     height: 8%;
-    background-color: lightcyan;
+    background-color: #ffffff;
 }
 
 .left-container .chat-preview{
     width: 100%;
     height: 70%;
-    background-color: lightsalmon;
+    background-color: #ffffff;
 }
+
+/* RIGHT CONTAINER */
 
 .right-container{
     width: 60%;
@@ -63,17 +108,43 @@ main{
 .right-container .user-info{
     width: 100%;
     height: 10%;
-    background-color: indianred;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-container .user-info .user-profile{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.right-container .user-info .user-profile img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.right-container .user-info .actions{
+    padding-right: 15px;
+}
+
+.right-container .user-info .actions i{
+    color: #b1b1b1;
+    font-size: 1.3em;
+    padding: 0 5px;
 }
 
 .right-container .chat{
     width: 100%;
     height: 80%;
-    background-color: thistle;
+    background-image: url("../img/mine.jpg");
 }
 
 .right-container .input{
     width: 100%;
     height: 10%;
-    background-color: lightskyblue;
+    background-color: #f3eeea;
 }
