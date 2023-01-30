@@ -48,14 +48,13 @@
                                 <div class="search-icon">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
-                                <input type="text" placeholder="Cerca o inizia una nuova chat">
+                                <input type="text" placeholder="Cerca o inizia una nuova chat" @input="searchContact" v-model="inputSearch">
                             </div>
                         </div>
 
                         <div class="chat-list">
 
-                            <div class="chat-preview" v-for="(contact, index) in contacts" :class="setActiveClass(index)" @click
-                            ="changeActiveClass(index)">
+                            <div class="chat-preview" v-for="(contact, index) in contacts" :class="setActiveClass(index)" @click="changeActiveClass(index)" :id="searchContact(contact.name)">
                                 <img :src="'img/avatar' + contact.avatar + '.jpg'" alt="Foto profilo">
                                 <div class="text">
                                     <p>{{contact.name}}</p>

@@ -9,6 +9,7 @@ createApp({
             activeContact: 0,
             lastAccess: "00:00",
             inputMessage: "",
+            inputSearch: "",
             contacts: [
                 {
                     name: 'Michele',
@@ -210,6 +211,25 @@ createApp({
         
         },
 
+        // Funzione per la ricerca dei contatti  
+        searchContact(name){
+    
+            let check = true;
+
+            for (let index = 0; index < this.inputSearch.length; index++) {
+                if(this.inputSearch[index]!=name[index]){
+                    check = false;
+                }
+            }
+
+            if (!check){
+                return "wrong-contact";
+            }
+            else{
+                return "";
+            }
+            
+        }
     }
 
 

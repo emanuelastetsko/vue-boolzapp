@@ -153,6 +153,11 @@ main{
     margin-right: 10px;
 }
 
+#wrong-contact{
+    display: none;
+}
+
+
 /* RIGHT CONTAINER */
 
 .right-container{
@@ -199,6 +204,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: auto;
 }
 
 .right-container .chat .messages{
