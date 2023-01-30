@@ -8,6 +8,7 @@ createApp({
 
             activeContact: 0,
             lastAccess: "00:00",
+            inputMessage: "",
             contacts: [
                 {
                     name: 'Michele',
@@ -187,6 +188,27 @@ createApp({
             this.changeLastAccess();
         },
 
+        // Messaggio di risposta all'input dell'utente
+        answerMessage(){
+            this.contacts[this.activeContact].messages.push({
+                date: '10/01/2020 21:32:55',
+                message: "Ok",
+                status: 'received',
+            });
+        },
+
+        // Funzione che permette di inviare il messaggio di input
+        submitMessage(){
+            this.contacts[this.activeContact].messages.push({
+                date: '10/01/2020 21:30:55',
+                message: this.inputMessage,
+                status: 'sent'
+            });
+
+            this.inputMessage = "";
+            setTimeout(this.answerMessage, 1000);
+        
+        },
 
     }
 
