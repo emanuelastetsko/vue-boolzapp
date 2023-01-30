@@ -5,6 +5,9 @@ createApp({
     data() {
 
         return{
+
+            activeContact: 0,
+            lastAccess: "00:00",
             contacts: [
                 {
                     name: 'Michele',
@@ -150,11 +153,42 @@ createApp({
                         }
                     ],
                 },
-            ]
-            
+            ],
+
         }
 
     },
+
+    methods:{
+
+        // Funzione che aggiunge la classe active al contatto attivo
+        setActiveClass(index){
+            if (this.activeContact == index) {
+                this.changeLastAccess();
+                return 'active';
+            }
+            else{
+                return '';
+            }
+        },
+
+        // Funzione che recupera l'ora dell'ultimo accesso
+        changeLastAccess(){
+            for(let i=0;i<this.contacts[this.activeContact].messages.length;i++){
+                if(this.contacts[this.activeContact].messages[i].status=="received"){
+                    this.lastAccess=this.contacts[this.activeContact].messages[i].date.substring(11,16);
+                }
+            }
+        },
+
+        // Funzione che assegna la classe active al click
+        changeActiveClass(index){
+            this.activeContact = index;
+            this.changeLastAccess();
+        },
+
+
+    }
 
 
 }).mount("#app");

@@ -158,7 +158,6 @@ main{
 .right-container{
     width: 60%;
     height: 100%;
-    background-color: deeppink;
 }
 
 .right-container .user-info{
@@ -211,7 +210,8 @@ main{
 
 .right-container .chat .messages .message{
     padding: 15px;
-    margin-bottom: 5px;
+    padding-bottom: 25px;
+    margin-bottom: 7px;
     border-radius: 10px;
     min-width: 40%;
     max-width: 60%;
